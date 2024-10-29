@@ -1,0 +1,7 @@
+<!-- restaurant/templates/restaurant/menu.html -->
+<h1>Menu</h1>
+<ul>
+    {% for item in items %}
+    <li>{{ item.name }} - ${{ item.price }}</li>
+    {% endfor %}
+</ul>

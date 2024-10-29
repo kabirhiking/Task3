@@ -1,0 +1,7 @@
+<!-- restaurant/templates/restaurant/inventory_list.html -->
+<h1>Inventory List</h1>
+<ul>
+    {% for item in inventory_items %}
+    <li>{{ item.item_name }} - Quantity: {{ item.quantity }}</li>
+    {% endfor %}
+</ul>
